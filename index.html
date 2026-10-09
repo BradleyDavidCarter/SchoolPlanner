@@ -6,167 +6,302 @@
 <meta name="robots" content="noindex">
 <title>School Week — Oct 12–18, 2026</title>
 <style>
-:root{--ink:#1f2933;--mute:#5f6b7a;--line:#e3e7ec;--amber:#fff4d6;--amberb:#e0a400;--bg:#f7f8fa;--card:#fff;--blue:#2457a6}
+:root{--ink:#1f2933;--mute:#5f6b7a;--line:#e3e7ec;--amber:#fff4d6;--amberb:#e0a400;--bg:#f4f6f9;--blue:#1a5fb4;--inv:#2e7d32}
 *{box-sizing:border-box}
 body{margin:0;font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
-main{max-width:860px;margin:0 auto;padding:16px}
-h1{font-size:1.6rem;margin:.4em 0 .1em}
-.gen{color:var(--mute);margin:0 0 1em}
-h2{font-size:1.2rem;margin:1.6em 0 .6em;border-bottom:2px solid var(--line);padding-bottom:.2em}
-h3{font-size:1.05rem;margin:.2em 0 .4em}
-.decision{background:var(--amber);border-left:6px solid var(--amberb);border-radius:8px;padding:12px 14px;margin:10px 0}
-.decision .q{font-weight:600;margin-top:.4em}
-.decision .q::before{content:"Decide: ";color:#8a5a00}
-.tag{display:inline-block;font-size:.75rem;font-weight:700;padding:1px 7px;border-radius:10px;background:#dfe7f5;color:var(--blue);margin-right:4px}
-.warn{display:inline-block;font-size:.75rem;font-weight:700;padding:1px 7px;border-radius:10px;background:#fde2e1;color:#a61b1b}
-.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:10px 0}
-.day h3{color:var(--blue)}
-ul{margin:.3em 0;padding-left:1.2em}
-table{width:100%;border-collapse:collapse;font-size:.92rem;margin:.4em 0}
-th,td{border-bottom:1px solid var(--line);text-align:left;padding:5px 6px;vertical-align:top}
-th{background:#f0f3f7}
-.low{color:#a61b1b;font-weight:600}
-.scroll{overflow-x:auto}
+main{max-width:860px;margin:0 auto;padding:14px 14px 90px}
+h1{font-size:1.55rem;margin:.3em 0 0}
+.gen{color:var(--mute);margin:0 0 .8em}
+.notice{background:#e8f0fb;border:1px solid #b6cdee;border-radius:10px;padding:10px 12px;font-weight:600}
+.gradeline{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:10px 0}
+nav.jump{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+nav.jump a{background:#fff;border:1px solid var(--line);border-radius:16px;padding:3px 10px;text-decoration:none;color:var(--blue);font-size:.9rem}
+h2{font-size:1.25rem;margin:1.6em 0 .4em;border-bottom:2px solid var(--line);padding-bottom:.2em}
+.boy{margin:10px 0 16px}
+.boy h3{font-size:1.02rem;margin:.8em 0 .3em;padding:4px 10px;border-radius:6px;background:#dfe7f5;color:#173d73}
+.b-G11 h3{background:#e6f3e6;color:#1f5a1f}.b-G6 h3{background:#f6e8f4;color:#6b2463}.b-ALL h3{background:#ececec;color:#333}
+h5.nodate{margin:.8em 0 .2em;color:var(--mute);font-size:.85rem;text-transform:uppercase;letter-spacing:.04em}
+.none{color:var(--mute);margin:.2em 0 .2em 4px}
+.decision{background:var(--amber);border-left:6px solid var(--amberb);border-radius:10px;padding:10px 13px;margin:10px 0}
+.decision h4{margin:.1em 0 .3em;font-size:1.05rem}
+.decision .row{margin:.35em 0}
+.decision .row>b{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:#7a5b00}
+.decision .row p{margin:.1em 0}
+.decision ul,.decision ol{margin:.15em 0;padding-left:1.25em}
+.decision .gap ul{color:#8a2a1a}
+.decision .q{font-weight:700;margin:.5em 0;padding:6px 9px;background:#ffe9a8;border-radius:6px}
+.when{display:inline-block;font-weight:700;font-size:.85rem;color:#173d73;background:#fff;border:1px solid #c9d6ea;border-radius:6px;padding:0 6px}
+ul.items{list-style:none;padding:0;margin:0}
+ul.items li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin:6px 0}
+.ctl{margin-top:4px}
+.tagsel{display:inline-block;font-size:.85rem;color:var(--mute);margin:4px 0}
+.tagsel select{font:inherit;font-size:16px;padding:3px 6px;border-radius:6px;border:1px solid #ccd;background:#fff;max-width:100%}
+.invbadge{display:none;font-size:.75rem;font-weight:700;color:#fff;background:var(--inv);border-radius:10px;padding:1px 8px}
+.item.inv .invbadge{display:inline-block}
+.item.inv{outline:3px solid var(--inv);outline-offset:-1px}
+.decision.inv{border-left-color:var(--inv)}
+.item.info .tagsel select{background:#eef2f7}
+details.inote{margin-top:4px}
+details.inote summary{font-size:.86em;color:var(--blue);cursor:pointer;list-style:none;padding:3px 0}
+details.inote summary::-webkit-details-marker{display:none}
+details.inote summary:before{content:"+ "}details.inote[open] summary:before{content:"- "}
+details.inote.has summary{color:#8a4a12;font-weight:600}
+textarea{width:100%;font:inherit;font-size:16px;border:1px solid #ccd;border-radius:8px;padding:6px 8px;resize:vertical;background:#fff}
+.secnote{background:#fff;border:1px dashed #b9c3d0;border-radius:10px;padding:10px 12px;margin:10px 0}
+.secnote label{display:block;margin-bottom:4px}
+#tools{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;margin:18px 0}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.btn{border:0;border-radius:9px;padding:10px 14px;font:inherit;font-size:.92em;font-weight:600;cursor:pointer;background:#e6e9ef;color:#223}
+.btn.pri{background:#1f3a5f;color:#fff}.btn.warn{background:#fdecea;color:#a33}
+#saved{font-size:.85em;color:#2e7d32;min-height:1.2em;margin-top:6px}
+#warn{display:none;background:#fdecea;color:#a33;padding:8px 12px;border-radius:8px;margin:8px 0;font-size:.9em}
+#out{display:none;margin-top:8px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px}
+#bar{position:fixed;left:0;right:0;bottom:0;background:#1f3a5f;color:#fff;z-index:5;padding:8px 12px calc(8px + env(safe-area-inset-bottom));box-shadow:0 -2px 8px #0003}
+#bar .in{max-width:860px;margin:auto;display:flex;align-items:center;gap:8px}
+#bar .st{flex:1;font-size:.88rem;line-height:1.2}
+#bar .btn{padding:8px 10px;font-size:.82em;background:#ffffff26;color:#fff}
 footer{margin:2em 0 1em;padding-top:1em;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
-@media (max-width:520px){body{font-size:15px}h1{font-size:1.35rem}th,td{padding:4px}}
+@media (max-width:520px){body{font-size:15px}h1{font-size:1.3rem}main{padding:10px 10px 90px}}
 </style>
 </head>
 <body>
 <main>
 <h1>School Week — Oct 12–18, 2026</h1>
 <p class="gen">Generated Oct 9, 2026 · for Carter · codes only (G15, G11, G6)</p>
-
-<h2>1. Decision points</h2>
-
-<div class="decision"><span class="tag">G15</span><strong>Grade watch (Report Card Run 2 alerts, threshold 80)</strong>
-<ul>
-<li><strong>BIO A</strong>: <span class="low">72.65</span> on alerts Oct 5, 6 and 8 — was 78 on the period-1 card.</li>
-<li><strong>ENG 1A</strong>: <span class="low">74.55</span> on alerts Oct 6 and 8 (77.50 on Oct 5). 70 on the period-1 card, 30 on the Aug 31 IPR. Under 80.</li>
-<li><strong>ALG 1A</strong>: 76.90 on Oct 5 and 6; not listed on Oct 8.</li>
-</ul>
-<div class="q">Any follow-up at home?</div></div>
-
-<div class="decision"><span class="tag">G11</span><strong>Math 6 re-teach / re-test date</strong>
-<p>Dean's Oct 8 newsletter says re-teach and re-test on "Monday." Adams JH fall break is Oct 9–13, so it is not Mon Oct 12. First possible school Monday is <strong>Mon Oct 19 — <span class="warn">UNCONFIRMED</span></strong>. Test scores not updated yet. Next week's topics are in an attachment that was not opened.</p>
-<div class="q">Confirm the re-test date (and whether to open the topics attachment)?</div></div>
-
-<div class="decision"><span class="tag">G15</span><strong>Picture make-up — Oct 21</strong>
-<p>Freshmen photographed during 1st period. Bell times are unknown, so no clock time. Retakes are at lunch; bring the photo proof. More details promised after fall break.</p>
-<div class="q">Make-up or retake? Calendar card without a time?</div></div>
-
-<div class="decision"><span class="tag">G11</span><strong>Picture retakes — Oct 19</strong>
-<p>No time given.</p>
-<div class="q">Retake needed? Calendar card as all-day?</div></div>
-
-<div class="decision"><span class="tag">G11</span><strong>EF Global Travel info meeting — Oct 27</strong>
-<p>Not school-sponsored (EF). Billed as mandatory for the program. No time given.</p>
-<div class="q">Interested?</div></div>
-
-<div class="decision"><span class="tag">G6</span><strong>Parent conference sign-up (Ms Craft)</strong>
-<p>Conferences <strong>Thu Oct 23</strong>, during the school day. Teams or phone OK. Steps: Google Form → SignUpGenius → SoftDocs e-signature. Note: the Weekly Woof said "Friday, October 23rd," but Oct 23, 2026 is a Thursday and the sign-up note says Thursday.</p>
-<div class="q">Pick a slot and format (in person, Teams, phone).</div></div>
-
-<div class="decision"><strong>Possible fees — no amounts given</strong>
-<ul>
-<li><span class="tag">G11</span> Yearbook</li>
-<li><span class="tag">G11</span> Pep rally season pass</li>
-<li><span class="tag">G11</span> EF travel trip</li>
-<li><span class="tag">G6</span> Book fair (cashless, eWallet)</li>
-</ul>
-<div class="q">Any to pass to Budget as a fee card?</div></div>
-
-<div class="decision"><strong>Calendar date cards ready</strong>
-<ul>
-<li><span class="tag">G15</span> PSAT day homeroom — Thu Oct 15, 7:15 AM (alternate bell schedule)</li>
-<li><span class="tag">G6</span> Family shopping night — Tue Oct 20, 4–6 PM</li>
-<li><span class="tag">G6</span> Read Deed Run — Tue Oct 20, 3:30 PM (LGI)</li>
-</ul>
-<div class="q">Hand any of these to Family Calendar? (Calendar sends only after you say send.)</div></div>
-
-<h2>2. Week ahead — Oct 12–18</h2>
-<div class="card day"><h3>Mon Oct 12</h3><ul>
-<li><span class="tag">G11</span> No school (fall break)</li>
-<li><span class="tag">G6</span> No school</li>
-<li><span class="tag">G15</span> Not stated in cards</li></ul></div>
-<div class="card day"><h3>Tue Oct 13</h3><ul>
-<li><span class="tag">G11</span> No school (fall break)</li>
-<li><span class="tag">G6</span> No school</li>
-<li><span class="tag">G15</span> Not stated in cards</li></ul></div>
-<div class="card day"><h3>Wed Oct 14</h3><ul>
-<li><span class="tag">G6</span> Book fair starts (Oct 14–16); online fair opens</li>
-<li><span class="tag">All</span> District Chromebook GoGuardian screening resumes</li></ul></div>
-<div class="card day"><h3>Thu Oct 15</h3><ul>
-<li><span class="tag">G15</span> PSAT day — freshmen don't test; report to homeroom 7:15 AM (officer elections, speaker; alternate bell schedule)</li></ul></div>
-<div class="card day"><h3>Fri Oct 16</h3><ul>
-<li><span class="tag">G11</span> Reflections art contest due (library box; theme "What my Culture Means to Me")</li>
-<li><span class="tag">G6</span> Report cards viewable in HAC</li></ul></div>
-<div class="card day"><h3>Sat Oct 17 – Sun Oct 18</h3><ul><li>Nothing in the cards.</li></ul></div>
-
-<h2>3. Per boy</h2>
-
-<div class="card"><h3>G15 — Jordan HS</h3>
-<div class="scroll"><table>
-<tr><th>Per</th><th>Course</th><th>Teacher</th><th>IPR 8/31</th><th>Period-1 card</th><th>Run-2 alerts</th></tr>
-<tr><td>1</td><td>ALG 1A</td><td>Berk</td><td>86</td><td>75 S</td><td>76.90 (Oct 5, 6); not listed Oct 8</td></tr>
-<tr><td>2</td><td>ART 1A</td><td>Ingram</td><td>98</td><td>84 E</td><td>—</td></tr>
-<tr><td>3</td><td>W GEO A</td><td>Findley</td><td>79</td><td>87 S</td><td>—</td></tr>
-<tr><td>4a</td><td>Lunch</td><td>—</td><td></td><td></td><td></td></tr>
-<tr><td>4b / 45</td><td>ENG 1A (0101A-28)</td><td>Kidd</td><td class="low">30</td><td class="low">70 S</td><td class="low">77.50 (Oct 5), 74.55 (Oct 6, 8)</td></tr>
-<tr><td>5b / 56</td><td>BIO A (0411A-17)</td><td>Karandikar</td><td>89</td><td>78 S</td><td class="low">72.65 (Oct 5, 6, 8)</td></tr>
-<tr><td>6b / 6c</td><td>WREST (5451A-1)</td><td>White</td><td>100</td><td>100 S</td><td>—</td></tr>
-<tr><td>7</td><td>PRIN BUS MKTG FIN A</td><td>Zhao</td><td>92</td><td>90 S</td><td>—</td></tr>
-</table></div>
-<p>Two period codes = one class. Bell times unknown.</p>
-<strong>Open items</strong><ul>
-<li>ENG 1A "Book Clubs 1st Unit" (Kidd, Oct 6) — attachment not opened.</li>
-<li>Picture make-up Oct 21 (see decisions).</li></ul></div>
-
-<div class="card"><h3>G11 — Adams JH</h3>
-<div class="scroll"><table>
-<tr><th>Per</th><th>Course</th><th>Teacher</th><th>IPR 8/31</th><th>Period-1 card</th></tr>
-<tr><td>1 / 2</td><td>Eng/Read 6 Block (J600-36)</td><td>Mcclimans</td><td>93</td><td>95 S</td></tr>
-<tr><td>3a / 34</td><td>Math 6 (J611-28)</td><td>Dean</td><td>99</td><td>93 S</td></tr>
-<tr><td>3b</td><td>Lunch</td><td>—</td><td></td><td></td></tr>
-<tr><td>4b / 45</td><td>Percussion (J989-1)</td><td>Holdford</td><td>100</td><td>96 E</td></tr>
-<tr><td>5b / 5c</td><td>Science 6 (J630-17)</td><td>Costagliola</td><td>97</td><td>97 S</td></tr>
-<tr><td>6</td><td>PE 6 (Boys)</td><td>Peters</td><td>100</td><td>100 S</td></tr>
-<tr><td>7</td><td>Soc Studies 6</td><td>Sanders</td><td class="low">76</td><td>81 S <span class="warn">watch</span></td></tr>
-</table></div>
-<p>Two period codes = one class. Bell times unknown.</p>
-<strong>Open items</strong><ul>
-<li>AMC 8 math competition sign-up (Google Form) — no deadline given.</li>
-<li>Math 6 re-teach / re-test — date unconfirmed (see decisions).</li></ul></div>
-
-<div class="card"><h3>G6 — Randolph, Ms Craft, Kindergarten</h3>
-<p>No schedule or grades on file.</p>
-<strong>Open items</strong><ul>
-<li>Finish culture-and-traditions slide on Canva (first done presents first).</li>
-<li>Join Remind.</li>
-<li>Field trip being rescheduled — no new date yet.</li>
-<li>Conference sign-up (see decisions).</li></ul></div>
-
-<h2>4. Look ahead</h2>
-<div class="card"><ul>
-<li><strong>Oct 19</strong> — <span class="tag">G11</span> picture retakes (no time)</li>
-<li><strong>Oct 19–22</strong> — <span class="tag">G6</span> book fair continues</li>
-<li><strong>Oct 19–23</strong> — <span class="tag">All</span> Digital Citizenship Week</li>
-<li><strong>Oct 20</strong> — <span class="tag">G6</span> class pictures and fall retakes; family shopping night 4–6 PM; Read Deed Run 3:30 PM (LGI)</li>
-<li><strong>Oct 21</strong> — <span class="tag">G15</span> picture make-up (1st period); <span class="tag">G6</span> Unity Day (wear orange); PTA online auction opens</li>
-<li><strong>Thu Oct 23</strong> — <span class="tag">G6</span> parent conferences; no school at Randolph</li>
-<li><strong>Mon Oct 26</strong> — <span class="tag">All</span> district public hearing on financial rating, 5 PM</li>
-<li><strong>Oct 27</strong> — <span class="tag">G11</span> EF Global Travel info meeting (no time)</li>
-<li><strong>Nov 11</strong> — <span class="tag">G6</span> Veterans Day reception (RSVP)</li>
-<li><strong>Dec 10</strong> — <span class="tag">G6</span> Food for Families donations due</li>
-</ul></div>
-
-<h2>5. Look back — Oct 5–9</h2>
-<div class="card"><ul>
-<li><strong>Oct 5, 6, 8</strong> — <span class="tag">G15</span> course average alerts (see grade watch)</li>
-<li><strong>Oct 7</strong> — <span class="tag">G6</span> JRE Spirit Night at Spring Creek BBQ (passed)</li>
-<li><strong>Oct 9</strong> — fall break began (G11, G6); GoGuardian screening paused Oct 9–13</li>
-</ul></div>
-
+<p class="notice">Notes and tags are information for School Bot to confirm with Carter. They are not execute orders. Nothing is sent or filed from this page.</p>
+<div id="warn">This browser isn't saving (private browsing?). Notes and tags will be lost when you close it. Use Export notes before you leave.</div>
+<p class="gradeline">Grade check-ins are a separate update, scheduled after the school posts grades. Known: report cards viewable in HAC Oct 16 (per Randolph's Weekly Wag).</p>
+<p class="gen">Each item has a note box and, if it has a date, a Calendar tag: Undecided (default), Info only (summary), or Make a stand-alone invite. Items tagged for an invite get a green <b>Invite</b> mark. Each section has its own note box too. Notes save on this phone and browser only. When you're done, tap <b>Export notes</b> and paste the result into chat with School Bot.</p>
+<nav class="jump"><a href="#dec">Decisions</a><a href="#week">Week ahead</a><a href="#ahead">Look ahead</a><a href="#back">Look back</a><a href="#tools">Export notes</a></nav>
+<h2 id="dec">1. Decision points</h2>
+<div class="boy b-G15"><h3>G15 — Jordan HS</h3><article class="decision item" data-id="d-g15-grades" data-title="Grade watch: Run 2 course average alerts">
+<div class="dh"><span class="when">Alerts Oct 5, 6, 8</span> <span class="invbadge">Invite</span><h4>Grade watch: Run 2 course average alerts</h4></div>
+<div class="row"><b>What</b><p>Jordan HS sent three course average alerts for G15. Each lists courses under the 80 threshold for Report Card Run 2. BIO A and ENG 1A are still on the latest one.</p></div>
+<div class="row"><b>Source</b><p>Jordan HS Course Average Alert emails (@katyisd.org), Oct 5, Oct 6 and Oct 8. Forwarded by Carter, summarized by Clerk.</p></div>
+<div class="row"><b>Details we have</b><ul><li>Threshold: 80, Report Card Run 2.</li><li>Oct 5: ENG 1A (0101A-28) 77.50, ALG 1A 76.90, BIO A (0411A-17) 72.65.</li><li>Oct 6: ENG 1A 74.55, ALG 1A 76.90, BIO A 72.65.</li><li>Oct 8: ENG 1A 74.55, BIO A 72.65. ALG 1A no longer listed.</li><li>ENG 1A went down 77.50 → 74.55 between Oct 5 and Oct 6. BIO A stayed at 72.65 on all three.</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>Why ALG 1A dropped off on Oct 8 (above 80 now, or another reason). The alert does not say.</li><li>Which assignments are behind the averages.</li><li>When Run 2 ends.</li><li>Any teacher comment. None came with the alerts.</li><li>ENG 1A &quot;Book Clubs 1st Unit&quot; (Kidd, Oct 6) attachment was not opened, so we don&#x27;t know if it is graded work.</li></ul></div>
+<div class="row"><b>Options</b><ol><li>Talk with G15 at home over the break about ENG 1A and BIO A (missing or redo work).</li><li>No action now. School Bot watches the next alerts and flags only changes.</li><li>You contact Kidd (ENG 1A) or Karandikar (BIO A) yourself. School Bot does not email teachers.</li></ol></div>
+<div class="q">Decide: Any follow-up at home?</div>
+<label class="tagsel">Calendar: <select data-tag="d-g15-grades"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g15-grades" placeholder="Your answer or question for School Bot"></textarea></details>
+</article><article class="decision item" data-id="d-g15-psat" data-title="PSAT School Day: homeroom 7:15 AM (invite candidate)">
+<div class="dh"><span class="when">Thu Oct 15, 7:15 AM</span> <span class="invbadge">Invite</span><h4>PSAT School Day: homeroom 7:15 AM (invite candidate)</h4></div>
+<div class="row"><b>What</b><p>Freshmen don&#x27;t take the PSAT. G15 reports to his assigned homeroom at 7:15 AM. The day runs on an alternate bell schedule.</p></div>
+<div class="row"><b>Source</b><p>Jordan HS PSAT School Day notice (@katyisd.org). The message date and sender role are not in the Clerk card.</p></div>
+<div class="row"><b>Details we have</b><ul><li>Thu Oct 15.</li><li>Freshmen don&#x27;t test.</li><li>Report to assigned homerooms at 7:15 AM.</li><li>Program: Class of 2030 officer elections and a speaker.</li><li>Alternate bell schedule is in a linked PDF.</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>The alternate bell schedule. The PDF was not opened.</li><li>End time of the homeroom program.</li><li>Which room his homeroom is in.</li></ul></div>
+<div class="row"><b>Options</b><ol><li>Stand-alone invite: Thu Oct 15, 7:15 AM, homeroom (no end time).</li><li>Info only. Keep it in this summary.</li><li>Open the bell schedule PDF first, then decide.</li></ol></div>
+<div class="q">Decide: Invite or summary only?</div>
+<label class="tagsel">Calendar: <select data-tag="d-g15-psat"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g15-psat" placeholder="Your answer or question for School Bot"></textarea></details>
+</article><article class="decision item" data-id="d-g15-pics" data-title="Picture make-up day">
+<div class="dh"><span class="when">Oct 21</span> <span class="invbadge">Invite</span><h4>Picture make-up day</h4></div>
+<div class="row"><b>What</b><p>Jordan HS picture make-up day. Freshmen are photographed during 1st period. Retakes are at lunch, with the photo proof.</p></div>
+<div class="row"><b>Source</b><p>Ms. Pratt, Canvas message. The message date is not in the Clerk card.</p></div>
+<div class="row"><b>Details we have</b><ul><li>Oct 21.</li><li>Freshmen photographed during 1st period.</li><li>Retakes at lunch. Bring the photo proof.</li><li>More details promised after fall break.</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>Clock time. Bell times are unknown, so no time for 1st period or lunch.</li><li>Whether G15 missed the first picture day or only needs a retake.</li><li>Any cost or order form.</li><li>The details promised after fall break.</li></ul></div>
+<div class="row"><b>Options</b><ol><li>Retake at lunch (G15 brings the photo proof).</li><li>Make-up during 1st period, if he missed the first picture day.</li><li>Skip it.</li></ol></div>
+<div class="q">Decide: Make-up, retake, or skip? If it goes on the calendar, it has no time.</div>
+<label class="tagsel">Calendar: <select data-tag="d-g15-pics"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g15-pics" placeholder="Your answer or question for School Bot"></textarea></details>
+</article></div><div class="boy b-G11"><h3>G11 — Adams JH</h3><article class="decision item" data-id="d-g11-reflect" data-title="Reflections art contest: enter or not">
+<div class="dh"><span class="when">Fri Oct 16</span> <span class="invbadge">Invite</span><h4>Reflections art contest: enter or not</h4></div>
+<div class="row"><b>What</b><p>Adams JH Reflections art contest. Theme &quot;What my Culture Means to Me.&quot; Due Fri Oct 16 in the library box.</p></div>
+<div class="row"><b>Source</b><p>Viking Update 10/08 (Adams JH newsletter, @katyisd.org), Oct 8.</p></div>
+<div class="row"><b>Details we have</b><ul><li>Theme: &quot;What my Culture Means to Me.&quot;</li><li>Due Fri Oct 16.</li><li>Turn in to the library box.</li><li>Fall break is Oct 9–13, so Oct 14–16 are the school days to turn it in.</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>Entry rules, art categories, size or format.</li><li>Whether an entry form is needed.</li><li>Whether G11 wants to enter.</li></ul></div>
+<div class="row"><b>Options</b><ol><li>Enter. G11 works on it over the break and turns it in by Fri Oct 16.</li><li>Skip it.</li></ol></div>
+<div class="q">Decide: Enter or skip?</div>
+<label class="tagsel">Calendar: <select data-tag="d-g11-reflect"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g11-reflect" placeholder="Your answer or question for School Bot"></textarea></details>
+</article><article class="decision item" data-id="d-g11-pics" data-title="Picture retake day">
+<div class="dh"><span class="when">Oct 19</span> <span class="invbadge">Invite</span><h4>Picture retake day</h4></div>
+<div class="row"><b>What</b><p>Adams JH picture retake day on Oct 19.</p></div>
+<div class="row"><b>Source</b><p>Viking Update 10/08 (Adams JH newsletter), Oct 8.</p></div>
+<div class="row"><b>Details we have</b><ul><li>Picture retake day Oct 19.</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>Time.</li><li>Whether proof or an order form is needed.</li><li>Cost.</li><li>Whether G11 needs a retake.</li></ul></div>
+<div class="row"><b>Options</b><ol><li>Retake. Info only, or an all-day reminder.</li><li>Skip it.</li></ol></div>
+<div class="q">Decide: Does G11 need a retake?</div>
+<label class="tagsel">Calendar: <select data-tag="d-g11-pics"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g11-pics" placeholder="Your answer or question for School Bot"></textarea></details>
+</article><article class="decision item" data-id="d-g11-ef" data-title="EF Global Travel info meeting">
+<div class="dh"><span class="when">Oct 27, time not given</span> <span class="invbadge">Invite</span><h4>EF Global Travel info meeting</h4></div>
+<div class="row"><b>What</b><p>The AJH Global Travel Program is run by EF, not the school. It has a mandatory info meeting on Oct 27.</p></div>
+<div class="row"><b>Source</b><p>AJH Global Travel Program (EF) message. The message date is not in the Clerk card.</p></div>
+<div class="row"><b>Details we have</b><ul><li>EF program, not school-sponsored.</li><li>Info meeting Oct 27, called mandatory (for the program).</li><li>Possible fee: EF trip, no amount given.</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>Meeting time and place.</li><li>Trip destination and dates.</li><li>Cost.</li><li>Whether it is for G11&#x27;s grade.</li></ul></div>
+<div class="row"><b>Options</b><ol><li>Interested. Attend the meeting (time still needed).</li><li>Not interested. Skip it.</li><li>Want more info first.</li></ol></div>
+<div class="q">Decide: Interested?</div>
+<label class="tagsel">Calendar: <select data-tag="d-g11-ef"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g11-ef" placeholder="Your answer or question for School Bot"></textarea></details>
+</article><h5 class="nodate">No date</h5><article class="decision item" data-id="d-g11-retest" data-title="Math 6 re-teach and re-test date">
+<div class="dh"><span class="when">Date unconfirmed</span> <span class="invbadge">Invite</span><h4>Math 6 re-teach and re-test date</h4></div>
+<div class="row"><b>What</b><p>Dean&#x27;s newsletter says re-teach and re-test are on &quot;Monday.&quot; Fall break makes that Monday unclear.</p></div>
+<div class="row"><b>Source</b><p>Dean (Math 6), AJH 6th Math ACA newsletter, Oct 8.</p></div>
+<div class="row"><b>Details we have</b><ul><li>Re-teach and re-test on &quot;Monday.&quot;</li><li>Test scores are not updated yet.</li><li>Next week&#x27;s topics are in an attachment.</li><li>Adams JH fall break is Oct 9–13, so it is not Mon Oct 12. The first possible Monday is Oct 19 — UNCONFIRMED.</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>The real re-test date.</li><li>Which test it covers, and whether G11 needs or wants it.</li><li>Next week&#x27;s topics. The attachment was not opened.</li></ul></div>
+<div class="row"><b>Options</b><ol><li>Treat Oct 19 as tentative. Wait for scores and the next newsletter.</li><li>You open Dean&#x27;s attachment or ask Dean yourself. School Bot does not contact teachers.</li><li>Ignore it unless his score shows he needs the re-test.</li></ol></div>
+<div class="q">Decide: How should we pin down the re-test date?</div>
+<label class="tagsel">Calendar: <select data-tag="d-g11-retest"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g11-retest" placeholder="Your answer or question for School Bot"></textarea></details>
+</article><article class="decision item" data-id="d-g11-amc" data-title="AMC 8 math competition sign-up">
+<div class="dh"><span class="when">No deadline given</span> <span class="invbadge">Invite</span><h4>AMC 8 math competition sign-up</h4></div>
+<div class="row"><b>What</b><p>AMC 8 math competition sign-up through a Google Form.</p></div>
+<div class="row"><b>Source</b><p>Viking Update 10/08 (Adams JH newsletter), Oct 8.</p></div>
+<div class="row"><b>Details we have</b><ul><li>Sign-up through a Google Form. The link was not clicked.</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>Sign-up deadline.</li><li>Competition date.</li><li>Cost.</li></ul></div>
+<div class="row"><b>Options</b><ol><li>Sign up. You fill in the Google Form.</li><li>Skip it.</li><li>Get the deadline and cost first.</li></ol></div>
+<div class="q">Decide: Sign G11 up?</div>
+<label class="tagsel">Calendar: <select data-tag="d-g11-amc"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g11-amc" placeholder="Your answer or question for School Bot"></textarea></details>
+</article><article class="decision item" data-id="d-g11-fees" data-title="Possible fees: yearbook, pep rally pass, EF trip">
+<div class="dh"><span class="when">No dates or amounts</span> <span class="invbadge">Invite</span><h4>Possible fees: yearbook, pep rally pass, EF trip</h4></div>
+<div class="row"><b>What</b><p>Three things that may cost money. No amounts were given.</p></div>
+<div class="row"><b>Source</b><p>Viking Update 10/08 (yearbook, pep rally pass). AJH Global Travel Program (EF trip).</p></div>
+<div class="row"><b>Details we have</b><ul><li>Yearbook sale.</li><li>Pep rally season pass.</li><li>EF trip (not school-sponsored).</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>Every amount.</li><li>Deadlines.</li><li>How to pay.</li></ul></div>
+<div class="row"><b>Options</b><ol><li>Pass some or all to Budget as fee cards with no amount. Budget files only after you say file it.</li><li>Skip them.</li><li>Wait until amounts are known.</li></ol></div>
+<div class="q">Decide: Any to pass to Budget?</div>
+<label class="tagsel">Calendar: <select data-tag="d-g11-fees"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g11-fees" placeholder="Your answer or question for School Bot"></textarea></details>
+</article></div><div class="boy b-G6"><h3>G6 — Randolph, Ms Craft, Kindergarten</h3><article class="decision item" data-id="d-g6-bookfair" data-title="Book fair spending (cashless eWallet)">
+<div class="dh"><span class="when">Oct 14–16 and Oct 19–22</span> <span class="invbadge">Invite</span><h4>Book fair spending (cashless eWallet)</h4></div>
+<div class="row"><b>What</b><p>Randolph book fair. Cashless through eWallet. The online fair opens Oct 14.</p></div>
+<div class="row"><b>Source</b><p>JRE Weekly Wag (Randolph newsletter), Oct 8.</p></div>
+<div class="row"><b>Details we have</b><ul><li>Book fair Oct 14–16 and Oct 19–22.</li><li>Cashless, through eWallet.</li><li>Online from Oct 14.</li><li>Family shopping night Tue Oct 20, 4–6 PM.</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>How much to load. No amount was given.</li><li>Whether the eWallet is set up yet.</li></ul></div>
+<div class="row"><b>Options</b><ol><li>Set an eWallet amount (you pick it), then School Bot hands Budget a fee card.</li><li>Shop only at family shopping night.</li><li>Skip it.</li></ol></div>
+<div class="q">Decide: Any eWallet amount to pass to Budget?</div>
+<label class="tagsel">Calendar: <select data-tag="d-g6-bookfair"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g6-bookfair" placeholder="Your answer or question for School Bot"></textarea></details>
+</article><article class="decision item" data-id="d-g6-pics" data-title="Class pictures and fall retakes">
+<div class="dh"><span class="when">Oct 20</span> <span class="invbadge">Invite</span><h4>Class pictures and fall retakes</h4></div>
+<div class="row"><b>What</b><p>Randolph class pictures and fall retakes on Oct 20.</p></div>
+<div class="row"><b>Source</b><p>JRE Weekly Wag (Randolph newsletter), Oct 8.</p></div>
+<div class="row"><b>Details we have</b><ul><li>Class pictures and fall retakes, Oct 20.</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>Time.</li><li>Cost or order form.</li><li>Whether G6 needs a retake.</li></ul></div>
+<div class="row"><b>Options</b><ol><li>Class picture only. Info only.</li><li>Also a retake for G6.</li><li>Order pictures, then a fee card to Budget once there is an amount.</li></ol></div>
+<div class="q">Decide: Retake or order?</div>
+<label class="tagsel">Calendar: <select data-tag="d-g6-pics"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g6-pics" placeholder="Your answer or question for School Bot"></textarea></details>
+</article><article class="decision item" data-id="d-g6-rdr" data-title="Read Deed Run (invite candidate)">
+<div class="dh"><span class="when">Tue Oct 20, 3:30 PM</span> <span class="invbadge">Invite</span><h4>Read Deed Run (invite candidate)</h4></div>
+<div class="row"><b>What</b><p>Read Deed Run in the LGI at Randolph.</p></div>
+<div class="row"><b>Source</b><p>JRE Weekly Wag (Randolph newsletter), Oct 8.</p></div>
+<div class="row"><b>Details we have</b><ul><li>Oct 20, 3:30 PM.</li><li>In the LGI.</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>What the event involves.</li><li>Whether families attend.</li><li>End time.</li></ul></div>
+<div class="row"><b>Options</b><ol><li>Stand-alone invite: Oct 20, 3:30 PM, LGI.</li><li>Info only.</li></ol></div>
+<div class="q">Decide: Invite or summary only?</div>
+<label class="tagsel">Calendar: <select data-tag="d-g6-rdr"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g6-rdr" placeholder="Your answer or question for School Bot"></textarea></details>
+</article><article class="decision item" data-id="d-g6-shop" data-title="Book fair family shopping night (invite candidate)">
+<div class="dh"><span class="when">Tue Oct 20, 4–6 PM</span> <span class="invbadge">Invite</span><h4>Book fair family shopping night (invite candidate)</h4></div>
+<div class="row"><b>What</b><p>Book fair family shopping night at Randolph.</p></div>
+<div class="row"><b>Source</b><p>JRE Weekly Wag (Randolph newsletter), Oct 8.</p></div>
+<div class="row"><b>Details we have</b><ul><li>Tue Oct 20, 4–6 PM.</li><li>Cashless, eWallet.</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>Spending amount (see the book fair decision).</li></ul></div>
+<div class="row"><b>Options</b><ol><li>Stand-alone invite: Tue Oct 20, 4–6 PM.</li><li>Info only.</li></ol></div>
+<div class="q">Decide: Invite or summary only?</div>
+<label class="tagsel">Calendar: <select data-tag="d-g6-shop"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g6-shop" placeholder="Your answer or question for School Bot"></textarea></details>
+</article><article class="decision item" data-id="d-g6-conf" data-title="Parent conference: pick a slot (invite candidate)">
+<div class="dh"><span class="when">Thu Oct 23</span> <span class="invbadge">Invite</span><h4>Parent conference: pick a slot (invite candidate)</h4></div>
+<div class="row"><b>What</b><p>Ms Craft&#x27;s parent conferences. Most in-person conferences are Thu Oct 23, during the school day. Teams or phone is OK.</p></div>
+<div class="row"><b>Source</b><p>Ms Craft, Parent Conference sign-up email, Oct 8. Also Kindergarten Weekly Woof, Oct 4.</p></div>
+<div class="row"><b>Details we have</b><ul><li>Most in-person conferences: Thu Oct 23, during the school day.</li><li>Teams or phone is OK.</li><li>Step 1: Google Form. Step 2: SignUpGenius. Then a SoftDocs e-signature.</li><li>The Weekly Woof (Oct 4) said &quot;Friday, October 23rd.&quot; Oct 23, 2026 is a Thursday, and the sign-up note says Thursday.</li><li>No school at Randolph on Oct 23.</li></ul></div>
+<div class="row gap"><b>What we don't know</b><ul><li>Open slots and times. Links were not clicked.</li><li>Length of a conference.</li><li>Sign-up deadline.</li></ul></div>
+<div class="row"><b>Options</b><ol><li>In person on Thu Oct 23. You sign up, then a stand-alone invite for the slot.</li><li>Teams or phone. You sign up, then an invite for the slot.</li><li>Hold off. Info only for now.</li></ol></div>
+<div class="q">Decide: Pick a slot and format.</div>
+<label class="tagsel">Calendar: <select data-tag="d-g6-conf"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label>
+<details class="inote"><summary>Add note</summary><textarea rows="2" data-note="d-g6-conf" placeholder="Your answer or question for School Bot"></textarea></details>
+</article></div><div class="boy b-ALL"><h3>District / All</h3><p class="none">Nothing in the cards.</p></div>
+<div class="secnote"><label for="ta-s-decisions"><b>Section note: Decision points</b></label><textarea id="ta-s-decisions" rows="3" data-note="s-decisions" placeholder="Anything about this section for School Bot"></textarea></div>
+<h2 id="week">2. Week ahead — Oct 12–18</h2>
+<div class="boy b-G15"><h3>G15 — Jordan HS</h3><ul class="items"><li class="item" data-id="w-g15-1213"><span class="when">Mon Oct 12 – Tue Oct 13</span> <span class="invbadge">Invite</span> School status not stated in the cards.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="w-g15-1213"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-g15-1213" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="w-g15-psat"><span class="when">Thu Oct 15, 7:15 AM</span> <span class="invbadge">Invite</span> PSAT day. Freshmen don&#x27;t test. Homeroom 7:15 AM for officer elections and a speaker. Alternate bell schedule (PDF not opened).<div class="ctl"><label class="tagsel">Calendar: <select data-tag="w-g15-psat"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-g15-psat" placeholder="Note for School Bot"></textarea></details></div></li></ul><h5 class="nodate">No date</h5><ul class="items"><li class="item" data-id="w-g15-book"><span class="when">No date</span> <span class="invbadge">Invite</span> ENG 1A &quot;Book Clubs 1st Unit&quot; (Kidd, Oct 6): &quot;Please see attached.&quot; Attachment not opened.<div class="ctl"><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-g15-book" placeholder="Note for School Bot"></textarea></details></div></li></ul></div><div class="boy b-G11"><h3>G11 — Adams JH</h3><ul class="items"><li class="item" data-id="w-g11-1213"><span class="when">Mon Oct 12 – Tue Oct 13</span> <span class="invbadge">Invite</span> No school. Fall break Oct 9–13.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="w-g11-1213"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-g11-1213" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="w-g11-refl"><span class="when">Fri Oct 16</span> <span class="invbadge">Invite</span> Reflections art contest due in the library box. Theme &quot;What my Culture Means to Me.&quot;<div class="ctl"><label class="tagsel">Calendar: <select data-tag="w-g11-refl"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-g11-refl" placeholder="Note for School Bot"></textarea></details></div></li></ul><h5 class="nodate">No date</h5><ul class="items"><li class="item" data-id="w-g11-retest"><span class="when">No date</span> <span class="invbadge">Invite</span> Math 6 re-teach and re-test &quot;Monday.&quot; Not Oct 12 (fall break). First possible is Oct 19, UNCONFIRMED.<div class="ctl"><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-g11-retest" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="w-g11-amc"><span class="when">No date</span> <span class="invbadge">Invite</span> AMC 8 sign-up via Google Form. No deadline given.<div class="ctl"><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-g11-amc" placeholder="Note for School Bot"></textarea></details></div></li></ul></div><div class="boy b-G6"><h3>G6 — Randolph, Ms Craft, Kindergarten</h3><ul class="items"><li class="item" data-id="w-g6-1213"><span class="when">Mon Oct 12 – Tue Oct 13</span> <span class="invbadge">Invite</span> No school.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="w-g6-1213"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-g6-1213" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="w-g6-fair"><span class="when">Wed Oct 14 – Fri Oct 16</span> <span class="invbadge">Invite</span> Book fair (cashless, eWallet). Online fair opens Oct 14.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="w-g6-fair"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-g6-fair" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="w-g6-hac"><span class="when">Fri Oct 16</span> <span class="invbadge">Invite</span> Report cards viewable in HAC.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="w-g6-hac"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-g6-hac" placeholder="Note for School Bot"></textarea></details></div></li></ul><h5 class="nodate">No date</h5><ul class="items"><li class="item" data-id="w-g6-canva"><span class="when">No date</span> <span class="invbadge">Invite</span> Finish the culture-and-traditions slide on Canva (first done presents first).<div class="ctl"><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-g6-canva" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="w-g6-remind"><span class="when">No date</span> <span class="invbadge">Invite</span> Join Remind.<div class="ctl"><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-g6-remind" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="w-g6-trip"><span class="when">No date</span> <span class="invbadge">Invite</span> Field trip being rescheduled. No new date yet.<div class="ctl"><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-g6-trip" placeholder="Note for School Bot"></textarea></details></div></li></ul></div><div class="boy b-ALL"><h3>District / All</h3><ul class="items"><li class="item" data-id="w-all-gg"><span class="when">Wed Oct 14</span> <span class="invbadge">Invite</span> Chromebook GoGuardian screening resumes (paused Oct 9–13).<div class="ctl"><label class="tagsel">Calendar: <select data-tag="w-all-gg"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-all-gg" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="w-all-wknd"><span class="when">Sat Oct 17 – Sun Oct 18</span> <span class="invbadge">Invite</span> Nothing in the cards.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="w-all-wknd"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="w-all-wknd" placeholder="Note for School Bot"></textarea></details></div></li></ul></div>
+<div class="secnote"><label for="ta-s-week"><b>Section note: Week ahead</b></label><textarea id="ta-s-week" rows="3" data-note="s-week" placeholder="Anything about this section for School Bot"></textarea></div>
+<h2 id="ahead">3. Look ahead</h2>
+<div class="boy b-G15"><h3>G15 — Jordan HS</h3><ul class="items"><li class="item" data-id="a-g15-pics"><span class="when">Oct 21</span> <span class="invbadge">Invite</span> Picture make-up. Freshmen during 1st period. Retakes at lunch with the photo proof. No clock time (bell times unknown).<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-g15-pics"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-g15-pics" placeholder="Note for School Bot"></textarea></details></div></li></ul></div><div class="boy b-G11"><h3>G11 — Adams JH</h3><ul class="items"><li class="item" data-id="a-g11-pics"><span class="when">Oct 19</span> <span class="invbadge">Invite</span> Picture retakes. No time given.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-g11-pics"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-g11-pics" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="a-g11-ef"><span class="when">Oct 27</span> <span class="invbadge">Invite</span> EF Global Travel info meeting (not school-sponsored). No time given.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-g11-ef"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-g11-ef" placeholder="Note for School Bot"></textarea></details></div></li></ul></div><div class="boy b-G6"><h3>G6 — Randolph, Ms Craft, Kindergarten</h3><ul class="items"><li class="item" data-id="a-g6-fair"><span class="when">Oct 19 – Oct 22</span> <span class="invbadge">Invite</span> Book fair continues (cashless, eWallet).<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-g6-fair"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-g6-fair" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="a-g6-pics"><span class="when">Oct 20</span> <span class="invbadge">Invite</span> Class pictures and fall retakes.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-g6-pics"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-g6-pics" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="a-g6-rdr"><span class="when">Tue Oct 20, 3:30 PM</span> <span class="invbadge">Invite</span> Read Deed Run in the LGI.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-g6-rdr"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-g6-rdr" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="a-g6-shop"><span class="when">Tue Oct 20, 4–6 PM</span> <span class="invbadge">Invite</span> Book fair family shopping night.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-g6-shop"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-g6-shop" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="a-g6-unity"><span class="when">Oct 21</span> <span class="invbadge">Invite</span> Unity Day. Wear orange.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-g6-unity"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-g6-unity" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="a-g6-pta"><span class="when">Oct 21</span> <span class="invbadge">Invite</span> PTA online auction starts.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-g6-pta"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-g6-pta" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="a-g6-conf"><span class="when">Thu Oct 23</span> <span class="invbadge">Invite</span> Parent conferences (Ms Craft). No school at Randolph.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-g6-conf"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-g6-conf" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="a-g6-vets"><span class="when">Nov 11</span> <span class="invbadge">Invite</span> Veterans Day reception (RSVP).<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-g6-vets"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-g6-vets" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="a-g6-fff"><span class="when">Dec 10</span> <span class="invbadge">Invite</span> Food for Families donations due.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-g6-fff"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-g6-fff" placeholder="Note for School Bot"></textarea></details></div></li></ul></div><div class="boy b-ALL"><h3>District / All</h3><ul class="items"><li class="item" data-id="a-all-dcw"><span class="when">Oct 19 – Oct 23</span> <span class="invbadge">Invite</span> Digital Citizenship Week.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-all-dcw"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-all-dcw" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="a-all-hear"><span class="when">Mon Oct 26, 5 PM</span> <span class="invbadge">Invite</span> Public hearing on the district financial rating.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="a-all-hear"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-all-hear" placeholder="Note for School Bot"></textarea></details></div></li></ul><h5 class="nodate">No date</h5><ul class="items"><li class="item" data-id="a-all-fff"><span class="when">No date</span> <span class="invbadge">Invite</span> Food for Families drive (district). Randolph&#x27;s due date is Dec 10.<div class="ctl"><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="a-all-fff" placeholder="Note for School Bot"></textarea></details></div></li></ul></div>
+<div class="secnote"><label for="ta-s-ahead"><b>Section note: Look ahead</b></label><textarea id="ta-s-ahead" rows="3" data-note="s-ahead" placeholder="Anything about this section for School Bot"></textarea></div>
+<h2 id="back">4. Look back — Oct 5–9</h2>
+<div class="boy b-G15"><h3>G15 — Jordan HS</h3><ul class="items"><li class="item" data-id="b-g15-alerts"><span class="when">Oct 5, 6, 8</span> <span class="invbadge">Invite</span> Course average alerts, Report Card Run 2 (see grade watch).<div class="ctl"><label class="tagsel">Calendar: <select data-tag="b-g15-alerts"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="b-g15-alerts" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="b-g15-book"><span class="when">Oct 6</span> <span class="invbadge">Invite</span> &quot;Book Clubs 1st Unit&quot; from Kidd (ENG 1A). Attachment not opened.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="b-g15-book"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="b-g15-book" placeholder="Note for School Bot"></textarea></details></div></li></ul></div><div class="boy b-G11"><h3>G11 — Adams JH</h3><ul class="items"><li class="item" data-id="b-g11-ship"><span class="when">Oct 6</span> <span class="invbadge">Invite</span> &quot;Spirit Week at Shipleys.&quot; Image only, no readable text.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="b-g11-ship"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="b-g11-ship" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="b-g11-math"><span class="when">Oct 8</span> <span class="invbadge">Invite</span> Dean&#x27;s Math 6 newsletter: re-teach and re-test &quot;Monday.&quot; Scores not updated yet.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="b-g11-math"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="b-g11-math" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="b-g11-break"><span class="when">Oct 9</span> <span class="invbadge">Invite</span> Fall break began (Oct 9–13).<div class="ctl"><label class="tagsel">Calendar: <select data-tag="b-g11-break"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="b-g11-break" placeholder="Note for School Bot"></textarea></details></div></li></ul></div><div class="boy b-G6"><h3>G6 — Randolph, Ms Craft, Kindergarten</h3><ul class="items"><li class="item" data-id="b-g6-spirit"><span class="when">Oct 7</span> <span class="invbadge">Invite</span> JRE Spirit Night at Spring Creek BBQ. Passed.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="b-g6-spirit"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="b-g6-spirit" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="b-g6-conf"><span class="when">Oct 8</span> <span class="invbadge">Invite</span> Ms Craft&#x27;s parent conference sign-up message.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="b-g6-conf"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="b-g6-conf" placeholder="Note for School Bot"></textarea></details></div></li><li class="item" data-id="b-g6-break"><span class="when">Oct 9</span> <span class="invbadge">Invite</span> Fall break. No school.<div class="ctl"><label class="tagsel">Calendar: <select data-tag="b-g6-break"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="b-g6-break" placeholder="Note for School Bot"></textarea></details></div></li></ul></div><div class="boy b-ALL"><h3>District / All</h3><ul class="items"><li class="item" data-id="b-all-gg"><span class="when">Oct 9</span> <span class="invbadge">Invite</span> GoGuardian screening paused (Oct 9–13).<div class="ctl"><label class="tagsel">Calendar: <select data-tag="b-all-gg"><option value="undecided">Undecided</option><option value="info">Info only (summary)</option><option value="invite">Make a stand-alone invite</option></select></label><details class="inote"><summary>Add note</summary><textarea rows="2" data-note="b-all-gg" placeholder="Note for School Bot"></textarea></details></div></li></ul></div>
+<div class="secnote"><label for="ta-s-back"><b>Section note: Look back</b></label><textarea id="ta-s-back" rows="3" data-note="s-back" placeholder="Anything about this section for School Bot"></textarea></div>
+<section id="tools">
+<h3 style="margin:0 0 4px">Notes for School Bot</h3>
+<div class="gen" style="margin:0">Export copies every note and every tag that isn't Undecided as plain text (item id, title, tag, note). Paste it into chat with School Bot. Nothing is sent from here.</div>
+<div class="btns"><button id="export" class="btn pri" type="button">Export notes</button><button id="clearnotes" class="btn warn" type="button">Clear notes</button></div>
+<div id="saved"></div>
+<textarea id="out" rows="10" readonly aria-label="Exported notes"></textarea>
+</section>
 <footer>Built from Clerk school cards and HGB roster 0.1. Mail is not an order. Nothing here has been sent or filed.</footer>
 </main>
+<div id="bar"><div class="in"><div class="st" id="cnt">0 notes · 0 invite · 0 info</div><a class="btn" href="#tools" style="text-decoration:none">Export</a></div></div>
+<script id="reg" type="application/json">{"d-g15-grades": {"title": "G15: Grade watch: Run 2 course average alerts (Alerts Oct 5, 6, 8)", "tagged": true}, "d-g15-psat": {"title": "G15: PSAT School Day: homeroom 7:15 AM (invite candidate) (Thu Oct 15, 7:15 AM)", "tagged": true}, "d-g15-pics": {"title": "G15: Picture make-up day (Oct 21)", "tagged": true}, "d-g11-reflect": {"title": "G11: Reflections art contest: enter or not (Fri Oct 16)", "tagged": true}, "d-g11-pics": {"title": "G11: Picture retake day (Oct 19)", "tagged": true}, "d-g11-ef": {"title": "G11: EF Global Travel info meeting (Oct 27, time not given)", "tagged": true}, "d-g11-retest": {"title": "G11: Math 6 re-teach and re-test date (Date unconfirmed)", "tagged": true}, "d-g11-amc": {"title": "G11: AMC 8 math competition sign-up (No deadline given)", "tagged": true}, "d-g11-fees": {"title": "G11: Possible fees: yearbook, pep rally pass, EF trip (No dates or amounts)", "tagged": true}, "d-g6-bookfair": {"title": "G6: Book fair spending (cashless eWallet) (Oct 14–16 and Oct 19–22)", "tagged": true}, "d-g6-pics": {"title": "G6: Class pictures and fall retakes (Oct 20)", "tagged": true}, "d-g6-rdr": {"title": "G6: Read Deed Run (invite candidate) (Tue Oct 20, 3:30 PM)", "tagged": true}, "d-g6-shop": {"title": "G6: Book fair family shopping night (invite candidate) (Tue Oct 20, 4–6 PM)", "tagged": true}, "d-g6-conf": {"title": "G6: Parent conference: pick a slot (invite candidate) (Thu Oct 23)", "tagged": true}, "s-decisions": {"title": "Section note: Decision points", "tagged": false}, "w-g15-1213": {"title": "G15: Mon Oct 12 – Tue Oct 13: School status not stated in the cards.", "tagged": true}, "w-g15-psat": {"title": "G15: Thu Oct 15, 7:15 AM: PSAT day. Freshmen don't test. Homeroom 7:15 AM for officer elections and a speaker. Alternate bell schedule (PDF not opened).", "tagged": true}, "w-g15-book": {"title": "G15: No date: ENG 1A \"Book Clubs 1st Unit\" (Kidd, Oct 6): \"Please see attached.\" Attachment not opened.", "tagged": false}, "w-g11-1213": {"title": "G11: Mon Oct 12 – Tue Oct 13: No school. Fall break Oct 9–13.", "tagged": true}, "w-g11-refl": {"title": "G11: Fri Oct 16: Reflections art contest due in the library box. Theme \"What my Culture Means to Me.\"", "tagged": true}, "w-g11-retest": {"title": "G11: No date: Math 6 re-teach and re-test \"Monday.\" Not Oct 12 (fall break). First possible is Oct 19, UNCONFIRMED.", "tagged": false}, "w-g11-amc": {"title": "G11: No date: AMC 8 sign-up via Google Form. No deadline given.", "tagged": false}, "w-g6-1213": {"title": "G6: Mon Oct 12 – Tue Oct 13: No school.", "tagged": true}, "w-g6-fair": {"title": "G6: Wed Oct 14 – Fri Oct 16: Book fair (cashless, eWallet). Online fair opens Oct 14.", "tagged": true}, "w-g6-hac": {"title": "G6: Fri Oct 16: Report cards viewable in HAC.", "tagged": true}, "w-g6-canva": {"title": "G6: No date: Finish the culture-and-traditions slide on Canva (first done presents first).", "tagged": false}, "w-g6-remind": {"title": "G6: No date: Join Remind.", "tagged": false}, "w-g6-trip": {"title": "G6: No date: Field trip being rescheduled. No new date yet.", "tagged": false}, "w-all-gg": {"title": "All: Wed Oct 14: Chromebook GoGuardian screening resumes (paused Oct 9–13).", "tagged": true}, "w-all-wknd": {"title": "All: Sat Oct 17 – Sun Oct 18: Nothing in the cards.", "tagged": true}, "s-week": {"title": "Section note: Week ahead", "tagged": false}, "a-g15-pics": {"title": "G15: Oct 21: Picture make-up. Freshmen during 1st period. Retakes at lunch with the photo proof. No clock time (bell times unknown).", "tagged": true}, "a-g11-pics": {"title": "G11: Oct 19: Picture retakes. No time given.", "tagged": true}, "a-g11-ef": {"title": "G11: Oct 27: EF Global Travel info meeting (not school-sponsored). No time given.", "tagged": true}, "a-g6-fair": {"title": "G6: Oct 19 – Oct 22: Book fair continues (cashless, eWallet).", "tagged": true}, "a-g6-pics": {"title": "G6: Oct 20: Class pictures and fall retakes.", "tagged": true}, "a-g6-rdr": {"title": "G6: Tue Oct 20, 3:30 PM: Read Deed Run in the LGI.", "tagged": true}, "a-g6-shop": {"title": "G6: Tue Oct 20, 4–6 PM: Book fair family shopping night.", "tagged": true}, "a-g6-unity": {"title": "G6: Oct 21: Unity Day. Wear orange.", "tagged": true}, "a-g6-pta": {"title": "G6: Oct 21: PTA online auction starts.", "tagged": true}, "a-g6-conf": {"title": "G6: Thu Oct 23: Parent conferences (Ms Craft). No school at Randolph.", "tagged": true}, "a-g6-vets": {"title": "G6: Nov 11: Veterans Day reception (RSVP).", "tagged": true}, "a-g6-fff": {"title": "G6: Dec 10: Food for Families donations due.", "tagged": true}, "a-all-dcw": {"title": "All: Oct 19 – Oct 23: Digital Citizenship Week.", "tagged": true}, "a-all-hear": {"title": "All: Mon Oct 26, 5 PM: Public hearing on the district financial rating.", "tagged": true}, "a-all-fff": {"title": "All: No date: Food for Families drive (district). Randolph's due date is Dec 10.", "tagged": false}, "s-ahead": {"title": "Section note: Look ahead", "tagged": false}, "b-g15-alerts": {"title": "G15: Oct 5, 6, 8: Course average alerts, Report Card Run 2 (see grade watch).", "tagged": true}, "b-g15-book": {"title": "G15: Oct 6: \"Book Clubs 1st Unit\" from Kidd (ENG 1A). Attachment not opened.", "tagged": true}, "b-g11-ship": {"title": "G11: Oct 6: \"Spirit Week at Shipleys.\" Image only, no readable text.", "tagged": true}, "b-g11-math": {"title": "G11: Oct 8: Dean's Math 6 newsletter: re-teach and re-test \"Monday.\" Scores not updated yet.", "tagged": true}, "b-g11-break": {"title": "G11: Oct 9: Fall break began (Oct 9–13).", "tagged": true}, "b-g6-spirit": {"title": "G6: Oct 7: JRE Spirit Night at Spring Creek BBQ. Passed.", "tagged": true}, "b-g6-conf": {"title": "G6: Oct 8: Ms Craft's parent conference sign-up message.", "tagged": true}, "b-g6-break": {"title": "G6: Oct 9: Fall break. No school.", "tagged": true}, "b-all-gg": {"title": "All: Oct 9: GoGuardian screening paused (Oct 9–13).", "tagged": true}, "s-back": {"title": "Section note: Look back", "tagged": false}}</script>
+<script>
+(function(){
+'use strict';
+var REG = JSON.parse(document.getElementById('reg').textContent);
+var KEY = 'schoolplanner:week:2026-10-12';
+var LABEL = {undecided:'Undecided', info:'Info only (summary)', invite:'Make a stand-alone invite'};
+var mem = {notes:{}, tags:{}}, canSave = true, timer;
+function load(){ try { var r = localStorage.getItem(KEY); if (r) { var s = JSON.parse(r); mem.notes = s.notes || {}; mem.tags = s.tags || {}; } } catch(e){ canSave = false; } }
+function save(){ mem.v = 1; mem.updated = new Date().toISOString();
+  try { localStorage.setItem(KEY, JSON.stringify(mem)); flash('Saved on this phone'); } catch(e){ canSave = false; warn(); } }
+function warn(){ document.getElementById('warn').style.display = 'block'; }
+function flash(t){ var el = document.getElementById('saved'); el.textContent = t; clearTimeout(timer); timer = setTimeout(function(){ el.textContent=''; }, 1500); }
+function noteUi(ta){ var det = ta.closest('details.inote'); if (!det) return; var t = ta.value.trim(), sum = det.querySelector('summary');
+  det.classList.toggle('has', !!t); sum.textContent = t ? 'Note: ' + (t.length > 40 ? t.slice(0,40) + '...' : t) : 'Add note'; }
+function tagUi(sel){ var it = sel.closest('.item'); if (!it) return; it.classList.toggle('inv', sel.value === 'invite'); it.classList.toggle('info', sel.value === 'info'); }
+function count(){ var n = 0, i = 0, f = 0;
+  Object.keys(mem.notes).forEach(function(k){ if ((mem.notes[k]||'').trim()) n++; });
+  Object.keys(mem.tags).forEach(function(k){ if (mem.tags[k] === 'invite') i++; else if (mem.tags[k] === 'info') f++; });
+  document.getElementById('cnt').textContent = n + ' note' + (n===1?'':'s') + ' · ' + i + ' invite · ' + f + ' info'; }
+function build(){
+  var nl = '\n', L = [];
+  L.push('School Week Oct 12-18, 2026: notes from Carter (exported ' + new Date().toLocaleString() + ')');
+  L.push('Notes and tags are information for School Bot to confirm with Carter. They are not execute orders.');
+  L.push('');
+  var n = 0;
+  Object.keys(REG).forEach(function(id){
+    var note = (mem.notes[id] || '').trim(), tag = mem.tags[id] || 'undecided';
+    var showTag = REG[id].tagged && tag !== 'undecided';
+    if (!note && !showTag) return;
+    n++;
+    L.push('- id: ' + id);
+    L.push('  title: ' + REG[id].title);
+    L.push('  tag: ' + (REG[id].tagged ? LABEL[tag] : '(no tag)'));
+    L.push('  note: ' + (note ? note.replace(/\s*\r?\n\s*/g, '; ') : '(none)'));
+  });
+  if (!n) L.push('(no notes or tags set)');
+  return L.join(nl);
+}
+function init(){
+  load(); if (!canSave) warn();
+  document.querySelectorAll('textarea[data-note]').forEach(function(ta){
+    var id = ta.getAttribute('data-note'); ta.value = mem.notes[id] || ''; noteUi(ta);
+    ta.addEventListener('input', function(){ if (ta.value.trim()) mem.notes[id] = ta.value; else delete mem.notes[id]; noteUi(ta); save(); count(); });
+  });
+  document.querySelectorAll('select[data-tag]').forEach(function(sel){
+    var id = sel.getAttribute('data-tag'); sel.value = mem.tags[id] || 'undecided'; tagUi(sel);
+    sel.addEventListener('change', function(){ if (sel.value === 'undecided') delete mem.tags[id]; else mem.tags[id] = sel.value; tagUi(sel); save(); count(); });
+  });
+  document.getElementById('export').addEventListener('click', function(){
+    var txt = build(), out = document.getElementById('out'); out.value = txt; out.style.display = 'block';
+    function fb(){ out.focus(); out.select(); try { document.execCommand('copy'); flash('Copied. Paste it into chat.'); } catch(e){ flash('Select the text below and copy it.'); } }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(function(){ flash('Copied. Paste it into chat.'); }, fb); else fb();
+  });
+  document.getElementById('clearnotes').addEventListener('click', function(){
+    if (!confirm('Erase all notes and set every tag back to Undecided?')) return;
+    mem.notes = {}; mem.tags = {};
+    document.querySelectorAll('textarea[data-note]').forEach(function(ta){ ta.value = ''; noteUi(ta); });
+    document.querySelectorAll('select[data-tag]').forEach(function(sel){ sel.value = 'undecided'; tagUi(sel); });
+    document.getElementById('out').style.display = 'none'; save(); count();
+  });
+  window.addEventListener('storage', function(e){ if (e.key === KEY) location.reload(); });
+  count();
+}
+window.__school = {build: build, KEY: KEY};
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
+</script>
 </body>
 </html>
