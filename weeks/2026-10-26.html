@@ -1,9 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="noindex" name="robots"/>
 <title>School Week — Oct 26–Nov 1, 2026</title>
 <style>
 :root{--ink:#1f2933;--mute:#5f6b7a;--line:#e3e7ec;--amber:#fff4d6;--amberb:#e0a400;--bg:#f4f6f9;--blue:#1a5fb4;--inv:#2e7d32}
@@ -72,6 +73,8 @@ textarea{width:100%;font:inherit;font-size:16px;border:1px solid #ccd;border-rad
 #bar .btn{padding:8px 10px;font-size:.82em;background:#ffffff26;color:#fff}
 footer{margin:2em 0 1em;padding-top:1em;border-top:1px solid var(--line);color:var(--mute);font-size:.9rem}
 @media (max-width:520px){body{font-size:15px}h1{font-size:1.3rem}main{padding:10px 10px 90px}}
+
+ul.items li.item.past{padding:4px 10px;margin:3px 0;color:#444;font-size:.92em;background:#f7f8fa}
 </style>
 </head>
 <body>
@@ -80,7 +83,7 @@ footer{margin:2em 0 1em;padding-top:1em;border-top:1px solid var(--line);color:v
 <p class="gen">Placeholder: items get added as school mail comes in. · for Carter · codes only (G15, G11, G6)</p>
 <p class="notice">Notes and tags are information for School Bot to confirm with Carter. They are not execute orders. Nothing is sent or filed from this page.</p>
 <div id="warn">This browser isn't saving (private browsing?). Notes and tags will be lost when you close it. Use Export notes before you leave.</div>
-<p class="gen">When items are added, each gets a note box and, if it has a date, a Calendar tag: Undecided (default), Info only (summary), or Make a stand-alone invite. Section notes work now.</p>
+<p class="gen">Items dated before today are shown as one-line summaries in Look back. When items are added, each gets a note box and, if it has a date, a Calendar tag: Undecided (default), Info only (summary), or Make a stand-alone invite. Section notes work now.</p>
 <nav class="jump"><a href="#dec">Decisions</a><a href="#week">Week ahead</a><a href="#ahead">Look ahead</a><a href="#back">Look back</a><a href="#tools">Export notes</a></nav>
 <p class="pastweeks">Weeks: <a href="2026-10-12.html">Oct 12–18, 2026</a> · <a href="2026-10-19.html">Oct 19–25, 2026</a> · <b>Oct 26–Nov 1, 2026</b> (this page) · <a href="2026-11-02.html">Nov 2–8, 2026</a></p>
 <h2 id="dec">1. Decision points</h2><div class="boy b-G15"><h3>G15 — Jordan HS</h3><p class="none">Nothing yet.</p></div><div class="boy b-G11"><h3>G11 — Adams JH</h3><p class="none">Nothing yet.</p></div><div class="boy b-G6"><h3>G6 — Randolph, Ms Craft, Kindergarten</h3><p class="none">Nothing yet.</p></div><div class="boy b-ALL"><h3>District / All</h3><p class="none">Nothing yet.</p></div><div class="secnote"><label for="ta-w20261026-dec"><b>Section note: Decision points</b></label><textarea id="ta-w20261026-dec" rows="3" data-note="w20261026-dec" placeholder="Anything about this section for School Bot"></textarea></div>
@@ -90,9 +93,9 @@ footer{margin:2em 0 1em;padding-top:1em;border-top:1px solid var(--line);color:v
 <section id="tools">
 <h3 style="margin:0 0 4px">Notes for School Bot</h3>
 <div class="gen" style="margin:0">Export copies every note and every tag that isn't Undecided as plain text (item id, title, tag, note). Paste it into chat with School Bot. Nothing is sent from here.</div>
-<div class="btns"><button id="export" class="btn pri" type="button">Export notes</button><button id="clearnotes" class="btn warn" type="button">Clear notes</button></div>
+<div class="btns"><button class="btn pri" id="export" type="button">Export notes</button><button class="btn warn" id="clearnotes" type="button">Clear notes</button></div>
 <div id="saved"></div>
-<textarea id="out" rows="10" readonly aria-label="Exported notes"></textarea>
+<textarea aria-label="Exported notes" id="out" readonly="" rows="10"></textarea>
 </section>
 <footer>Built from Clerk school cards and HGB roster 0.1. Mail is not an order. Nothing here has been sent or filed.</footer>
 </main>
